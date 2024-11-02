@@ -1,0 +1,19 @@
+.care-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  .care-list h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .care-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .care-list li {
+    margin-bottom: 0.5rem;
+  }
+  

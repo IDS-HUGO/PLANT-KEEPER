@@ -1,1 +1,15 @@
-<p>care-form works!</p>
+<h2>Agregar Cuidado</h2>
+<form (ngSubmit)="addCare()">
+  <select [(ngModel)]="care.plantaId" name="plantaId" required>
+    <option value="1">Planta 1</option>
+    <option value="2">Planta 2</option>
+  </select>
+  <select [(ngModel)]="care.tipoCuidado" name="tipoCuidado" required>
+    <option value="Riego">Riego</option>
+    <option value="Fertilización">Fertilización</option>
+    <option value="Poda">Poda</option>
+  </select>
+  <input [(ngModel)]="care.fechaCuidado" name="fechaCuidado" type="date" required>
+  <textarea [(ngModel)]="care.notas" name="notas" placeholder="Notas"></textarea>
+  <button type="submit">Agregar</button>
+</form>

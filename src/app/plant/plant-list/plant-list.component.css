@@ -1,0 +1,28 @@
+.plant-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  .plant-list h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .plant-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .plant-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .plant-list a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .plant-list a:hover {
+    text-decoration: underline;
+  }
+  

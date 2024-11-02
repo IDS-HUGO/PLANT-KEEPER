@@ -1,1 +1,14 @@
-<p>plant-form works!</p>
+<h2>Agregar Planta</h2>
+<div *ngIf="isLoggedIn; else notLoggedIn">
+  <form (ngSubmit)="addPlant()">
+    <input [(ngModel)]="plant.nombreComun" name="nombreComun" placeholder="Nombre Común" required>
+    <input [(ngModel)]="plant.nombreCientifico" name="nombreCientifico" placeholder="Nombre Científico" required>
+    <input [(ngModel)]="plant.frecuenciaRiego" name="frecuenciaRiego" placeholder="Frecuencia de Riego" required>
+    <input [(ngModel)]="plant.condicionesLuz" name="condicionesLuz" placeholder="Condiciones de Luz" required>
+    <button type="submit">Agregar Planta</button>
+  </form>
+</div>
+<ng-template #notLoggedIn>
+  <p>Debes estar logueado para agregar plantas. Por favor, <a routerLink="/login">inicia sesión</a>.</p>
+</ng-template>
+<a routerLink="/plants">Volver a la Lista</a>

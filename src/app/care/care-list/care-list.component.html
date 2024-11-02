@@ -1,1 +1,7 @@
-<p>care-list works!</p>
+<h2>Lista de Cuidados</h2>
+<ul>
+  <li *ngFor="let care of cares">
+    {{ care.tipoCuidado }} - {{ care.fechaCuidado | date:'shortDate' }}
+  </li>
+</ul>
+<a routerLink="/care-form">Agregar Cuidado</a>
