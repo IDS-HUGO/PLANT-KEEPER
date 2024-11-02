@@ -1,0 +1,8 @@
+ng generate component auth/login --skip-tests
+ng generate component auth/register --skip-tests
+ng generate component plant/plant-list --skip-tests
+ng generate component plant/plant-detail --skip-tests
+ng generate component plant/plant-form --skip-tests
+ng generate component care/care-list --skip-tests
+ng generate component care/care-form --skip-tests
+ng generate component user/user-profile --skip-tests
